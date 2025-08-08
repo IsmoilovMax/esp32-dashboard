@@ -1,10 +1,13 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Screens from './screens'
 
 const App = () => {
 	return (
-		<>
-			<Screens />
-		</>
+		<BrowserRouter>
+			<Routes>
+				<Route path='/dashboard' element={<Screens />} />
+			</Routes>
+		</BrowserRouter>
 	)
 }
 
